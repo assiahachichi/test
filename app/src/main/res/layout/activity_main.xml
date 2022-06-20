@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    >
+
+    <LinearLayout
+
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome !"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_foreground"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Please enter the player names"/>
+
+    <EditText
+        android:fontFamily="sans-serif"
+        android:id="@+id/editTextPlayer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="username"
+        android:drawableRight="@drawable/ic_player"
+        android:drawableTint="@color/purple_700"
+        android:hint="Player 1"
+        android:shadowColor="@color/purple_700"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_700"
+        android:textColorLink="@color/purple_700" />
+
+
+    <EditText
+        android:fontFamily="sans-serif"
+        android:id="@+id/editTextPlayer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="username"
+        android:drawableRight="@drawable/ic_player"
+        android:drawableTint="@color/purple_700"
+        android:hint="Player 2"
+        android:shadowColor="@color/purple_700"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_700"
+        android:textColorLink="@color/purple_700" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/purple_700"
+        android:drawableRight="@drawable/ic_login"
+        android:drawableTint="@color/white"
+        android:padding="8dp"
+        android:text="Go"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>
